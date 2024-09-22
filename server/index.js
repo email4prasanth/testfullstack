@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
-const hostname = 'localhost'
-const port = 5000; 
+const port = process.env.PORT || 5000;
 require('dotenv').config();
 const axios = require('axios'); 
 const bodyParser = require ('body-parser'); 
@@ -11,8 +10,8 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.listen(port, hostname, ()=>{
-    console.log(`The Server is running on ${hostname}${port}`)
+app.listen(port, '0.0.0.0', ()=>{
+    console.log(`The Server is running on ${port}`)
 })
 
 // app.post('/',async(req,res)=>{
