@@ -62,4 +62,4 @@ npm start -y
 - in App.js add add `import {Routers, Router} from 'react-router-dom'` to make this use under `index.js` 
 - 1:11:09 weather data is coming.
 - Frontend/client/reactjs running at 3000 port
-- Backend/server/nodejs is running at 5000 port
+- Backend/server/nodejs is running at 10000 port

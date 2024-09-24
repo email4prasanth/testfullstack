@@ -1,0 +1,24 @@
+# Ignore node_modules to avoid copying them to the image (they are installed inside the container)
+node_modules
+npm-debug.log
+
+# Ignore local environment files
+.env
+
+# Logs
+logs
+*.log
+
+# Ignore directories/files specific to editors and operating systems
+.DS_Store
+.vscode
+.idea
+*.swp
+
+# Ignore build-related files
+/dist
+/build
+
+# Ignore Docker-related files if necessary (optional)
+docker-compose.yml
+# Dockerfile
